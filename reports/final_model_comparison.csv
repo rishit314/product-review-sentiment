@@ -1,0 +1,6 @@
+model,accuracy,macro_f1,weighted_f1,negative_f1,neutral_f1,positive_f1
+Naive Bayes,0.8156,0.433,0.7577,0.4036,0.0,0.8954
+Logistic Regression,0.8153,0.6335,0.8323,0.7274,0.2686,0.9044
+Linear SVM,0.8611,0.6352,0.8542,0.7447,0.2281,0.9328
+BERT - Baseline,0.8956,0.6504,0.8761,0.8116,0.1876,0.9519
+BERT - Class-weighted,0.8557,0.7083,0.8706,0.7975,0.3993,0.928

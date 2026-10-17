@@ -7,3 +7,6 @@ jupyter
 ipykernel
 streamlit
 joblib
+transformers
+datasets
+accelerate

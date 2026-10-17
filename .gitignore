@@ -1,9 +1,10 @@
+
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
@@ -15,20 +16,24 @@ env/
 .env
 .env.*
 
-# Dataset files — do not upload raw or processed data
+# Raw and processed datasets
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Generated model files
-models/*.pkl
-models/*.joblib
+# Trained model artifacts (all nested directories)
+models/**/*.joblib
+models/**/*.pkl
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
 
-# Generated outputs
+# Generated plots
 reports/*.png
-reports/*.csv
-reports/*.json
+reports/*.jpg
+reports/*.jpeg
 
 # Editor and operating system
 .vscode/

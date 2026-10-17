@@ -1,0 +1,94 @@
+{
+  "project_title": "Product Review Classification Using Sentiment Analysis and NLP Models",
+  "dataset": "Amazon customer product reviews from Zenodo record 3549704",
+  "target": "Three-class sentiment label: Negative, Neutral, Positive",
+  "evaluation_note": "The final-test split was partly exposed during earlier development. Disclose this limitation; do not describe the split as a completely untouched holdout.",
+  "splits": {
+    "train": {
+      "rows": 42599,
+      "label_distribution": {
+        "Positive": 33185,
+        "Negative": 6360,
+        "Neutral": 3054
+      },
+      "label_proportions": {
+        "Positive": 0.779009,
+        "Negative": 0.149299,
+        "Neutral": 0.071692
+      }
+    },
+    "validation": {
+      "rows": 9129,
+      "label_distribution": {
+        "Positive": 7111,
+        "Negative": 1363,
+        "Neutral": 655
+      },
+      "label_proportions": {
+        "Positive": 0.778946,
+        "Negative": 0.149304,
+        "Neutral": 0.071749
+      }
+    },
+    "final_test": {
+      "rows": 9129,
+      "label_distribution": {
+        "Positive": 7111,
+        "Negative": 1363,
+        "Neutral": 655
+      },
+      "label_proportions": {
+        "Positive": 0.778946,
+        "Negative": 0.149304,
+        "Neutral": 0.071749
+      }
+    }
+  },
+  "model_results": [
+    {
+      "model": "Naive Bayes",
+      "accuracy": 0.8156,
+      "macro_f1": 0.433,
+      "weighted_f1": 0.7577,
+      "negative_f1": 0.4036,
+      "neutral_f1": 0.0,
+      "positive_f1": 0.8954
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.8153,
+      "macro_f1": 0.6335,
+      "weighted_f1": 0.8323,
+      "negative_f1": 0.7274,
+      "neutral_f1": 0.2686,
+      "positive_f1": 0.9044
+    },
+    {
+      "model": "Linear SVM",
+      "accuracy": 0.8611,
+      "macro_f1": 0.6352,
+      "weighted_f1": 0.8542,
+      "negative_f1": 0.7447,
+      "neutral_f1": 0.2281,
+      "positive_f1": 0.9328
+    },
+    {
+      "model": "BERT - Baseline",
+      "accuracy": 0.8956,
+      "macro_f1": 0.6504,
+      "weighted_f1": 0.8761,
+      "negative_f1": 0.8116,
+      "neutral_f1": 0.1876,
+      "positive_f1": 0.9519
+    },
+    {
+      "model": "BERT - Class-weighted",
+      "accuracy": 0.8557,
+      "macro_f1": 0.7083,
+      "weighted_f1": 0.8706,
+      "negative_f1": 0.7975,
+      "neutral_f1": 0.3993,
+      "positive_f1": 0.928
+    }
+  ]
+}

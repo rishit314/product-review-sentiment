@@ -30,6 +30,12 @@ models/**/*.bin
 models/**/*.pt
 models/**/*.pth
 
+# Allow only the artifacts required by the Streamlit app
+!models/
+!models/final_split/
+!models/final_split/tfidf_vectorizer.joblib
+!models/final_split/logistic_regression.joblib
+
 # Generated plots
 reports/*.png
 reports/*.jpg
